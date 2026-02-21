@@ -6,7 +6,7 @@ const painPoints = [
     icon: TableProperties,
     title: "Drowning in Spreadsheets",
     description:
-      "Your business data lives in a dozen tabs nobody can find. Every update is a copy-paste nightmare that eats hours you don't have.",
+      "Your data is scattered across spreadsheets that don't talk to each other, making it hard to find anything, track progress, or make confident decisions.",
   },
   {
     icon: AlertTriangle,
