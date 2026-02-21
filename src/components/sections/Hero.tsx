@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-20">
       <div className="container mx-auto px-6">
-        <div className="max-w-3xl">
+        <div className="max-w-4xl">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
