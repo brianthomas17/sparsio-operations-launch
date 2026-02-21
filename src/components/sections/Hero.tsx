@@ -10,7 +10,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight text-foreground"
+            className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight text-foreground"
           >
             Spreadsheets Aren't a System.
             <br />
