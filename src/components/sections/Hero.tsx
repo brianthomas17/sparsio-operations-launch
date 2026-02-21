@@ -12,7 +12,9 @@ const Hero = () => {
             transition={{ duration: 0.7 }}
             className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight text-foreground"
           >
-            Spreadsheets Aren't a System. Let's Build You One.
+            Spreadsheets Aren't a System.
+            <br />
+            Let's Build You One.
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
