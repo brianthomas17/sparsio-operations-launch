@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { User } from "lucide-react";
+import aboutPhoto from "@/assets/about-photo.jpg";
 
 const About = () => {
   return (
@@ -41,13 +41,11 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="flex justify-center"
           >
-            {/* Photo placeholder */}
-            <div className="w-72 h-80 md:w-80 md:h-96 rounded-2xl bg-muted border border-border flex items-center justify-center">
-              <div className="text-center">
-                <User size={48} className="text-muted-foreground/40 mx-auto mb-3" />
-                <p className="text-sm text-muted-foreground">Photo placeholder</p>
-              </div>
-            </div>
+            <img
+              src={aboutPhoto}
+              alt="Founder of Sparsio Design"
+              className="w-72 h-80 md:w-80 md:h-96 rounded-2xl object-cover object-top border border-border shadow-sm"
+            />
           </motion.div>
         </div>
       </div>
