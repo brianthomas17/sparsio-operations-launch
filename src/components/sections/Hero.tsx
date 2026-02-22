@@ -32,13 +32,20 @@ const Hero = () => {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="mt-10"
           >
-            <a
-              href="#contact"
+            <button
+              onClick={() => {
+                const el = document.getElementById("contact");
+                if (el) {
+                  el.scrollIntoView({ behavior: "smooth" });
+                  // Dispatch custom event to open the form
+                  window.dispatchEvent(new CustomEvent("open-contact-form"));
+                }
+              }}
               className="inline-flex items-center gap-2 rounded-lg bg-primary px-7 py-3.5 text-base font-semibold text-primary-foreground hover:bg-accent transition-colors group"
             >
               Let's Talk
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-            </a>
+            </button>
           </motion.div>
         </div>
       </div>
