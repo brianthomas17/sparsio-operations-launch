@@ -1,15 +1,14 @@
 
 
-## Fix Hero Headline Line Wrapping
+## Green "S" Favicon — Matching Site Color
 
-**Problem**: On desktop, "Spreadsheets Aren't a System." wraps before "System." — so "System." drops to a second line. You want the entire first sentence on one line on desktop/web viewports.
+### Color
 
-**Root cause**: The heading container is constrained to `max-w-3xl`, which is too narrow for the full sentence at the current `lg:text-7xl` font size.
+The site's primary color is `hsl(154, 100%, 16%)` which equals `#005229` — a deep forest green. This will be used for the "S".
 
-**Solution**: Widen the container from `max-w-3xl` to `max-w-4xl` in `Hero.tsx`. This gives the headline enough room to keep "Spreadsheets Aren't a System." on a single line at desktop sizes, while mobile will still wrap naturally.
+### Changes
 
-**File**: `src/components/sections/Hero.tsx` (line 8)
-- Change `max-w-3xl` to `max-w-4xl`
+1. **Create `public/favicon.svg`** — An SVG with a bold "S" in `#005229` on a transparent background, using a sans-serif font to match the site's Plus Jakarta Sans style.
 
-If that alone isn't enough, we can also slightly reduce the large breakpoint font from `lg:text-7xl` to `lg:text-[4rem]` as a secondary adjustment.
+2. **Update `index.html`** — Add `<link rel="icon" type="image/svg+xml" href="/favicon.svg">` and remove the old `favicon.ico` reference.
 
