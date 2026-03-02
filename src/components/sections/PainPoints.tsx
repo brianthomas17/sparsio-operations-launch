@@ -4,21 +4,21 @@ import { TableProperties, AlertTriangle, EyeOff } from "lucide-react";
 const painPoints = [
   {
     icon: TableProperties,
-    title: "Drowning in Spreadsheets",
+    title: "Everything Lives Somewhere Different",
     description:
-      "Your data is scattered across spreadsheets that don't talk to each other, making it hard to find anything, track progress, or make confident decisions.",
+      "Your contacts are in a spreadsheet, your notes are in email, and your updates are in someone's head. Nothing connects, so nothing's reliable.",
   },
   {
     icon: AlertTriangle,
-    title: "Things Falling Through the Cracks",
+    title: "Things Fall Through the Cracks",
     description:
-      "Tasks get lost, follow-ups get missed, and clients slip through because there's no system catching what falls.",
+      "Without a real system, follow-ups get missed, deadlines slip, and you're constantly playing catch-up instead of running your business.",
   },
   {
     icon: EyeOff,
-    title: "No Visibility Into What's Happening",
+    title: "You're Running on Gut Feeling",
     description:
-      "You can't see the big picture because your data is scattered everywhere. Decisions get made on gut feeling instead of real information.",
+      "When your data is scattered and outdated, you can't see what's actually happening — so decisions get made on guesswork instead of facts.",
   },
 ];
 
