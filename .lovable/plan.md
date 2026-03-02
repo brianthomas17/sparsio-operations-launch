@@ -1,16 +1,29 @@
 
 
-## Remove the About Section
+## Update Pain Points Cards
 
-### What changes
+Update the three cards in the "Sound Familiar?" section with the new copy provided.
 
-1. **Delete `src/components/sections/About.tsx`** -- Remove the entire file.
+### Changes
 
-2. **Update `src/pages/Index.tsx`** -- Remove the About import and its usage from the page layout.
+**File: `src/components/sections/PainPoints.tsx`**
 
-3. **Update `src/components/Navbar.tsx`** -- Remove the "About" link from the navigation since the section no longer exists.
+Update the `painPoints` array with new titles, descriptions, and adjust icons to match the new themes:
 
-4. **Clean up `src/assets/about-photo.jpg`** -- Delete the photo asset since it's no longer used.
+1. **Card 1 -- Data chaos**
+   - Icon: `TableProperties` (keep, fits "data" theme)
+   - Title: "Everything Lives Somewhere Different"
+   - Description: "Your contacts are in a spreadsheet, your notes are in email, and your updates are in someone's head. Nothing connects, so nothing's reliable."
 
-This keeps the site feeling like a company rather than a solo operation. No replacement section is added -- just a clean removal.
+2. **Card 2 -- Dropping balls**
+   - Icon: `AlertTriangle` (keep, fits "things falling through" theme)
+   - Title: "Things Fall Through the Cracks"
+   - Description: "Without a real system, follow-ups get missed, deadlines slip, and you're constantly playing catch-up instead of running your business."
+
+3. **Card 3 -- No visibility**
+   - Icon: `EyeOff` (keep, fits "no visibility" theme)
+   - Title: "You're Running on Gut Feeling"
+   - Description: "When your data is scattered and outdated, you can't see what's actually happening -- so decisions get made on guesswork instead of facts."
+
+No structural or styling changes needed -- just swapping the text content.
 
