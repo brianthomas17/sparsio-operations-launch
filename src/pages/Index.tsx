@@ -5,7 +5,6 @@ import HowItWorks from "@/components/sections/HowItWorks";
 import Services from "@/components/sections/Services";
 import ExampleBuilds from "@/components/sections/ExampleBuilds";
 import Testimonials from "@/components/sections/Testimonials";
-import About from "@/components/sections/About";
 import CTABanner from "@/components/sections/CTABanner";
 import Footer from "@/components/Footer";
 
@@ -19,7 +18,6 @@ const Index = () => {
       <Services />
       {/* <ExampleBuilds /> */}
       {/* <Testimonials /> */}
-      <About />
       <CTABanner />
       <Footer />
     </div>
