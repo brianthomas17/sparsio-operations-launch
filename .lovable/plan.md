@@ -1,14 +1,16 @@
 
 
-## Green "S" Favicon — Matching Site Color
+## Remove the About Section
 
-### Color
+### What changes
 
-The site's primary color is `hsl(154, 100%, 16%)` which equals `#005229` — a deep forest green. This will be used for the "S".
+1. **Delete `src/components/sections/About.tsx`** -- Remove the entire file.
 
-### Changes
+2. **Update `src/pages/Index.tsx`** -- Remove the About import and its usage from the page layout.
 
-1. **Create `public/favicon.svg`** — An SVG with a bold "S" in `#005229` on a transparent background, using a sans-serif font to match the site's Plus Jakarta Sans style.
+3. **Update `src/components/Navbar.tsx`** -- Remove the "About" link from the navigation since the section no longer exists.
 
-2. **Update `index.html`** — Add `<link rel="icon" type="image/svg+xml" href="/favicon.svg">` and remove the old `favicon.ico` reference.
+4. **Clean up `src/assets/about-photo.jpg`** -- Delete the photo asset since it's no longer used.
+
+This keeps the site feeling like a company rather than a solo operation. No replacement section is added -- just a clean removal.
 
