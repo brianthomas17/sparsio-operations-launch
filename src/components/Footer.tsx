@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
         <div className="mt-8 text-center">
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} © {new Date().getFullYear()} Sparsio Systems. All rights reserved.. All rights reserved.
+            © {new Date().getFullYear()} Sparsio Systems. All rights reserved.
           </p>
         </div>
       </div>

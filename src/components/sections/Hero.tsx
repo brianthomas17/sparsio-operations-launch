@@ -12,9 +12,11 @@ const Hero = () => {
             transition={{ duration: 0.7 }}
             className="text-4xl md:text-6xl lg:text-[4rem] font-extrabold leading-[1.1] tracking-tight text-foreground"
           >
-            Spreadsheets Aren't a System.
+            Your business has outgrown your systems.
             <br />
-            Let's Build You One.
+            Enterprise software was built for someone else.
+            <br />
+            We build yours.
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
@@ -22,9 +24,7 @@ const Hero = () => {
             transition={{ duration: 0.7, delay: 0.15 }}
             className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed"
           >
-            Sparsio Systems builds custom operations systems tailored to how your business actually custom operations systems tailored to how your business actually
-            works. We replace the chaos with clean, organized workflows — so nothing falls through
-            the cracks.
+            Not another SaaS subscription. A custom operational system, built with modern AI, engineered specifically for how your business runs — and where it's going.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
