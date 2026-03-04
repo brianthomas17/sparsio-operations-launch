@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <span className="text-lg font-extrabold tracking-tight text-primary">
-            Sparsio System Design
+            Sparsio Systems
           </span>
           <div className="flex items-center gap-6">
             {navLinks.map((link) => (
@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
         <div className="mt-8 text-center">
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Sparsio System Design. All rights reserved.
+            © {new Date().getFullYear()} © {new Date().getFullYear()} Sparsio Systems. All rights reserved.. All rights reserved.
           </p>
         </div>
       </div>

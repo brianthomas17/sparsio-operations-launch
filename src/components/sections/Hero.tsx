@@ -22,7 +22,7 @@ const Hero = () => {
             transition={{ duration: 0.7, delay: 0.15 }}
             className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed"
           >
-            Sparsio System Design builds custom operations systems tailored to how your business actually
+            Sparsio Systems builds custom operations systems tailored to how your business actually custom operations systems tailored to how your business actually
             works. We replace the chaos with clean, organized workflows — so nothing falls through
             the cracks.
           </motion.p>
