@@ -11,14 +11,14 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7 }}
-          className="md:hidden flex justify-center mb-10"
+          className="lg:hidden flex justify-center mb-10"
         >
           <img src={sparsioLogo} alt="Sparsio logo mark" className="w-[160px] h-auto" />
         </motion.div>
 
         {/* Headline row: text + logo side by side on desktop */}
-        <div className="flex flex-col md:flex-row items-center gap-10 md:gap-0">
-          <div className="w-full md:w-[60%]">
+        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-0">
+          <div className="w-full lg:w-[60%]">
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -38,7 +38,7 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="hidden md:flex w-[40%] items-center justify-center"
+            className="hidden lg:flex w-[40%] items-center justify-center"
           >
             <img src={sparsioLogo} alt="Sparsio logo mark" className="w-[70%] h-auto" />
           </motion.div>
