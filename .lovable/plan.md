@@ -1,29 +1,16 @@
 
 
-## Update Pain Points Cards
+## Update Hero Copy and Fix Duplicates
 
-Update the three cards in the "Sound Familiar?" section with the new copy provided.
+### Changes to `src/components/sections/Hero.tsx`
 
-### Changes
+1. **Headline**: Replace current two-line headline with:
+   - Line 1: "Your business has outgrown your systems."
+   - Line 2: "Enterprise software was built for someone else."
+   - Line 3: "We build yours."
 
-**File: `src/components/sections/PainPoints.tsx`**
+2. **Subheadline**: Replace the broken/duplicated paragraph with:
+   - "Not another SaaS subscription. A custom operational system, built with modern AI, engineered specifically for how your business runs — and where it's going."
 
-Update the `painPoints` array with new titles, descriptions, and adjust icons to match the new themes:
-
-1. **Card 1 -- Data chaos**
-   - Icon: `TableProperties` (keep, fits "data" theme)
-   - Title: "Everything Lives Somewhere Different"
-   - Description: "Your contacts are in a spreadsheet, your notes are in email, and your updates are in someone's head. Nothing connects, so nothing's reliable."
-
-2. **Card 2 -- Dropping balls**
-   - Icon: `AlertTriangle` (keep, fits "things falling through" theme)
-   - Title: "Things Fall Through the Cracks"
-   - Description: "Without a real system, follow-ups get missed, deadlines slip, and you're constantly playing catch-up instead of running your business."
-
-3. **Card 3 -- No visibility**
-   - Icon: `EyeOff` (keep, fits "no visibility" theme)
-   - Title: "You're Running on Gut Feeling"
-   - Description: "When your data is scattered and outdated, you can't see what's actually happening -- so decisions get made on guesswork instead of facts."
-
-No structural or styling changes needed -- just swapping the text content.
+3. **Fix Footer duplicate**: The last diff introduced a duplicated copyright line in `src/components/Footer.tsx` (`© {year} © {year} Sparsio Systems. All rights reserved.. All rights reserved.`) — will fix to single clean line.
 
