@@ -13,7 +13,7 @@ const Hero = () => {
           transition={{ duration: 0.7 }}
           className="lg:hidden flex justify-center mb-10"
         >
-          <img src={sparsioLogo} alt="Sparsio logo mark" className="w-[160px] h-auto" />
+          <img src={sparsioLogo} alt="Sparsio logo mark" className="w-[220px] md:w-[260px] h-auto" />
         </motion.div>
 
         {/* Headline row: text + logo side by side on desktop */}
