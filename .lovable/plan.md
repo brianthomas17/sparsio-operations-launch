@@ -1,16 +1,14 @@
 
 
-## Update Hero Copy and Fix Duplicates
+## Fix Logo Vertical Centering in Hero
 
-### Changes to `src/components/sections/Hero.tsx`
+The issue: the flex row uses `items-center` which centers based on the full row height, but as the viewport shrinks the text block gets taller (wrapping) while the logo stays the same size, causing misalignment toward the bottom.
 
-1. **Headline**: Replace current two-line headline with:
-   - Line 1: "Your business has outgrown your systems."
-   - Line 2: "Enterprise software was built for someone else."
-   - Line 3: "We build yours."
+### Change in `src/components/sections/Hero.tsx`
 
-2. **Subheadline**: Replace the broken/duplicated paragraph with:
-   - "Not another SaaS subscription. A custom operational system, built with modern AI, engineered specifically for how your business runs — and where it's going."
+**Line 9**: The parent flex row already has `items-center`, which should vertically center both columns. The problem is the right column `motion.div` (line 65-72) needs explicit height matching. I'll ensure the right column stretches to the full height of the left column and centers the image within it by using `self-stretch` combined with `items-center justify-center` on the right column. This way the logo always centers relative to the full height of the text block regardless of viewport width.
 
-3. **Fix Footer duplicate**: The last diff introduced a duplicated copyright line in `src/components/Footer.tsx` (`© {year} © {year} Sparsio Systems. All rights reserved.. All rights reserved.`) — will fix to single clean line.
+- Change the right column class from `hidden md:flex w-[40%] items-center justify-center` to `hidden md:flex w-[40%] items-center justify-center self-stretch`
+
+This ensures the right column stretches to match the left column's height, and `items-center justify-center` centers the logo within that stretched space.
 
