@@ -25,7 +25,7 @@ const Footer = () => {
             ))}
           </div>
           <a
-            href="mailto:hello@sparsiodesign.com"
+            href="mailto:hello@sparsiosystems.com"
             className="text-sm text-muted-foreground hover:text-primary transition-colors"
           >
             hello@sparsiodesign.com
