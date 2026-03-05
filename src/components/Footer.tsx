@@ -28,7 +28,7 @@ const Footer = () => {
             href="mailto:hello@sparsiosystems.com"
             className="text-sm text-muted-foreground hover:text-primary transition-colors"
           >
-            hello@sparsiodesign.com
+            hello@sparsiosystems.com
           </a>
         </div>
         <div className="mt-8 text-center">
