@@ -62,7 +62,7 @@ const CTABanner = () => {
       formData.append("_captcha", "false");
       formData.append("_subject", `New inquiry from ${data.name}`);
 
-      const res = await fetch("https://formsubmit.co/ajax/hello@sparsiodesign.com", {
+      const res = await fetch("https://formsubmit.co/ajax/hello@sparsiosystems.com", {
         method: "POST",
         body: formData,
       });
