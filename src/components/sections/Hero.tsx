@@ -25,11 +25,9 @@ const Hero = () => {
               transition={{ duration: 0.7 }}
               className="text-4xl md:text-6xl lg:text-[4rem] font-extrabold leading-[1.1] tracking-tight text-foreground"
             >
-              Your business has outgrown your systems.
+              You've outgrown your process.
               <br />
-              Enterprise software was built for someone else.
-              <br />
-              We build yours.
+              We build what's next.
             </motion.h1>
           </div>
 
