@@ -29,6 +29,36 @@ const Hero = () => {
               <br />
               We build what's next.
             </motion.h1>
+
+            {/* Subtext + CTA below the headline */}
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.15 }}
+              className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed"
+            >
+              Not another SaaS subscription. A custom operational system, built with modern AI, engineered specifically for how your business runs — and where it's going.
+            </motion.p>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.3 }}
+              className="mt-10"
+            >
+              <button
+                onClick={() => {
+                  const el = document.getElementById("contact");
+                  if (el) {
+                    el.scrollIntoView({ behavior: "smooth" });
+                    window.dispatchEvent(new CustomEvent("open-contact-form"));
+                  }
+                }}
+                className="inline-flex items-center gap-2 rounded-lg bg-primary px-7 py-3.5 text-base font-semibold text-primary-foreground hover:bg-accent transition-colors group"
+              >
+                Let's Talk
+                <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+              </button>
+            </motion.div>
           </div>
 
           {/* Right column - desktop only, centered with headline */}
@@ -41,36 +71,6 @@ const Hero = () => {
             <img src={sparsioLogo} alt="Sparsio logo mark" className="w-[70%] h-auto" />
           </motion.div>
         </div>
-
-        {/* Subtext + CTA below the headline row */}
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.15 }}
-          className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed"
-        >
-          Not another SaaS subscription. A custom operational system, built with modern AI, engineered specifically for how your business runs — and where it's going.
-        </motion.p>
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.3 }}
-          className="mt-10"
-        >
-          <button
-            onClick={() => {
-              const el = document.getElementById("contact");
-              if (el) {
-                el.scrollIntoView({ behavior: "smooth" });
-                window.dispatchEvent(new CustomEvent("open-contact-form"));
-              }
-            }}
-            className="inline-flex items-center gap-2 rounded-lg bg-primary px-7 py-3.5 text-base font-semibold text-primary-foreground hover:bg-accent transition-colors group"
-          >
-            Let's Talk
-            <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-          </button>
-        </motion.div>
       </div>
     </section>
   );
