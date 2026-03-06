@@ -1,10 +1,10 @@
 
 
-## Make Logo Bigger on Tablet/Mobile
+## Fix Gap Between Headline and Subtext
 
-Currently the mobile/tablet logo is set to `w-[160px]`. I'll increase it to be more prominent.
+The issue: the subtext paragraph and CTA button sit **outside** the two-column flex row. The logo column is tall, stretching the flex row height. The subtext then renders below the entire row, creating a large visual gap from the headline.
 
-### Change in `src/components/sections/Hero.tsx`
+### Fix in `src/components/sections/Hero.tsx`
 
-**Line 17**: Change the logo image class from `w-[160px]` to `w-[220px] md:w-[260px]` — this makes it 220px on mobile and 260px on tablet.
+Move the subtext (`<motion.p>`) and CTA button (`<motion.div>`) **inside** the left column `<div>` (the 60% width one), so they sit directly beneath the headline text rather than after the full-height flex row.
 
