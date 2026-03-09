@@ -1,16 +1,10 @@
 
 
-## Update Logo and Favicon
+## Make Logo Bigger on Tablet/Mobile
 
-Replace the current logo image and browser tab icon with the new circuit tree PNG.
+Currently the mobile/tablet logo is set to `w-[160px]`. I'll increase it to be more prominent.
 
-### Changes
+### Change in `src/components/sections/Hero.tsx`
 
-1. **Copy uploaded image** to `src/assets/sparsio-logo.png` (replaces existing file) and `public/favicon.png`
-
-2. **`index.html`** — favicon already points to `/favicon.png`, no change needed
-
-3. **`src/components/sections/Hero.tsx`** — already imports from `@/assets/sparsio-logo.png`, no change needed
-
-Both the hero logo and the browser tab favicon will update automatically since we're replacing the files in-place.
+**Line 17**: Change the logo image class from `w-[160px]` to `w-[220px] md:w-[260px]` — this makes it 220px on mobile and 260px on tablet.
 
