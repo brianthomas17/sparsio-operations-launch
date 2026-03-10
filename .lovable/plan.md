@@ -1,12 +1,10 @@
 
 
-## Replace Lovable OG Image with Sparsio Branding
+## Make Logo Bigger on Tablet/Mobile
 
-### Problem
-`index.html` has `og:image` and `twitter:image` meta tags pointing to `https://lovable.dev/opengraph-image-p98pqg.png`.
+Currently the mobile/tablet logo is set to `w-[160px]`. I'll increase it to be more prominent.
 
-### Fix in `index.html`
-- Update `og:image` and `twitter:image` to point to `https://sparsiosystems.com/favicon.png` (your logo, already deployed)
-- Update `twitter:site` from `@Lovable` to remove it or set to your own handle
-- Ideally, create a proper 1200x630 OG image for best results on social platforms, but the logo will work as a quick fix
+### Change in `src/components/sections/Hero.tsx`
+
+**Line 17**: Change the logo image class from `w-[160px]` to `w-[220px] md:w-[260px]` — this makes it 220px on mobile and 260px on tablet.
 
