@@ -1,10 +1,14 @@
 
 
-## Make Logo Bigger on Tablet/Mobile
+## Open Contact Form from Navbar "Let's Talk" Buttons
 
-Currently the mobile/tablet logo is set to `w-[160px]`. I'll increase it to be more prominent.
+The Hero button already scrolls to `#contact` and dispatches the `open-contact-form` custom event. The Navbar buttons (desktop and mobile) only use `<a href="#contact">` — they scroll but don't open the form.
 
-### Change in `src/components/sections/Hero.tsx`
+### Fix in `src/components/Navbar.tsx`
 
-**Line 17**: Change the logo image class from `w-[160px]` to `w-[220px] md:w-[260px]` — this makes it 220px on mobile and 260px on tablet.
+Change both "Let's Talk" links (desktop on ~line 48 and mobile on ~line 82) from `<a>` tags to `<button>` elements that:
+1. Scroll to `#contact` smoothly
+2. Dispatch the `open-contact-form` custom event (same pattern as the Hero button)
+
+This matches the existing Hero button behavior — no new logic needed in CTABanner since it already listens for this event.
 
