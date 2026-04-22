@@ -18,6 +18,11 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const handleLetsTalk = () => {
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+    window.dispatchEvent(new CustomEvent("open-contact-form"));
+  };
+
   return (
     <motion.nav
       initial={{ y: -100 }}
@@ -45,12 +50,12 @@ const Navbar = () => {
           ))}
         </div>
 
-        <a
-          href="#contact"
+        <button
+          onClick={handleLetsTalk}
           className="hidden md:inline-flex items-center rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-accent transition-colors"
         >
           Let's Talk
-        </a>
+        </button>
 
         {/* Mobile toggle */}
         <button
@@ -79,13 +84,15 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
-          <a
-            href="#contact"
-            onClick={() => setMobileOpen(false)}
+          <button
+            onClick={() => {
+              setMobileOpen(false);
+              handleLetsTalk();
+            }}
             className="inline-flex items-center rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground"
           >
             Let's Talk
-          </a>
+          </button>
         </motion.div>
       )}
     </motion.nav>
